@@ -1,22 +1,28 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
 
 public class Main {
 	
 	private int x;
 	private int y;
-	private double z;
+	private List<Integer> loi;
 	
 	public Main() {
 		this.x = 0;
 		this.y = 0;
-		this.z = 0;
+		loi = new ArrayList<Integer>();
 	}
 	
 	public int getX(){
 		return this.x;
 	}
 	
-	public int getY(){
-		return this.y + (int) this.z;
+	public void getY(){
+		for (Integer i : loi) {
+			y += i;
+		}
 	}
 	
 	public void setX(int number){
