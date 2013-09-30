@@ -10,7 +10,7 @@ public class Main {
 	}
 	
 	public int getX(){
-		return this.x;
+		return (this.x+5);
 	}
 	
 	public int getY(){
