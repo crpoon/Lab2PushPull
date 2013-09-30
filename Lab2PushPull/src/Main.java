@@ -1,27 +1,27 @@
 
 public class Main {
 	
-	private String x;
-	private String y;
+	private int x;
+	private int y;
 	
 	public Main() {
-		this.x = "blah";
-		this.y = "cheese";
+		this.x = 0;
+		this.y = 0;
 	}
 	
-	public String getX(){
+	public int getX(){
 		return this.x;
 	}
 	
-	public String getY(){
+	public int getY(){
 		return this.y;
 	}
 	
-	public void setX(String number){
+	public void setX(int number){
 		this.x = number;
 	}
 	
-	public void setY(String number){
+	public void setY(int number){
 		this.y = number;
 	}
 
