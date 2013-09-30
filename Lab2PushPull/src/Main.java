@@ -3,7 +3,7 @@ public class Main {
 	
 	private int x;
 	private int y;
-	private int z;
+	private double z;
 	
 	public Main() {
 		this.x = 0;
@@ -16,7 +16,7 @@ public class Main {
 	}
 	
 	public int getY(){
-		return this.y + this.z;
+		return this.y + (int) this.z;
 	}
 	
 	public void setX(int number){
