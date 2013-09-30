@@ -1,28 +1,40 @@
 
 public class Main {
 	
-	private String x;
-	private String y;
+	private int time;
+	private String name;
 	
 	public Main() {
-		this.x = "blah";
-		this.y = "cheese";
+		time = 5;
+		name = "Bob";
 	}
 	
-	public String getX(){
-		return this.x;
+	public int getTime(){
+		return time;
 	}
 	
-	public String getY(){
-		return this.y;
+	public String getName(){
+		return name;
 	}
 	
-	public void setX(String number){
-		this.x = number;
+	public void tick(){
+		time++;
 	}
 	
-	public void setY(String number){
-		this.y = number;
+	public boolean areYouLate(int number){
+		if (time > number){
+			return true;
+		}
+		return false;
+	}
+	
+	public int howMuchTimeLeft(int number){
+		int timeLeft = 0;
+		while(!areYouLate(number)){
+			tick();
+			timeLeft++;
+		}
+		return timeLeft;
 	}
 
 }
