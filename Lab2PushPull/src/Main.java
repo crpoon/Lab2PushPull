@@ -3,18 +3,20 @@ public class Main {
 	
 	private int x;
 	private int y;
+	private int z;
 	
 	public Main() {
 		this.x = 0;
 		this.y = 0;
+		this.z = 0;
 	}
 	
 	public int getX(){
-		return (this.x+5);
+		return this.x;
 	}
 	
 	public int getY(){
-		return this.y;
+		return this.y + this.z;
 	}
 	
 	public void setX(int number){
