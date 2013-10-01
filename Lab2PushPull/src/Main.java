@@ -17,12 +17,10 @@ public class Main {
 	
 	public int getX(){
 		return this.x;
+
 	}
-	
+
 	public void getY(){
-		for (int j = 0; j < 10; j++){
-			loi.add(j,j);
-		}
 		for (Integer i : loi) {
 			y += i;
 		}
