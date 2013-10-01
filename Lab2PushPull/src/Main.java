@@ -1,42 +1,36 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
 
 public class Main {
 	
-
-	private int time;
-	private String name;
+	private int x;
+	private int y;
+	private List<Integer> loi;
 	
 	public Main() {
-		time = 5;
-		name = "Bob";
+		this.x = 0;
+		this.y = 0;
+		loi = new ArrayList<Integer>();
 	}
 	
-	public int getTime(){
-		return time;
+	public int getX(){
+		return this.x;
 	}
-	
 
-	public String getName(){
-		return name;
-	}
-	
-	public void tick(){
-		time++;
-	}
-	
-	public boolean areYouLate(int number){
-		if (time > number){
-			return true;
+	public void getY(){
+		for (Integer i : loi) {
+			y += i;
 		}
-		return false;
 	}
 	
-	public int howMuchTimeLeft(int number){
-		int timeLeft = 0;
-		while(!areYouLate(number)){
-			tick();
-			timeLeft++;
-		}
-		return timeLeft;
+	public void setX(int number){
+		this.x = number;
+	}
+	
+	public void setY(int number){
+		this.y = number;
 	}
 
 }
